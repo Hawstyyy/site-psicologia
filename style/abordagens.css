@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  background-color: #bea8c8;
+}
+
+.main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 67px;
+  padding-bottom: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  width: 99vw;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.main_abordagens {
+  height: 1002px;
+  background: linear-gradient(to bottom, #2D1153, #8f3ca7);
+}
+
+.abordagens_txt {
+  width: 99%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 3%;
+  position: absolute;
+  color: #fff;
+  z-index: 10;
+}
+
+.abordagens_title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.abordagens_desc {
+  width: 1000px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.abordagens_container {
+  height: 100%;
+  padding-top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  column-gap: 10%;
+  row-gap: 2%;
+}
+
+.abordagens_container > img {
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border: #fff solid 1px;
+}
+
+.abordagens_container > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.abordagens_container > div > h1 {
+  justify-self: left;
+}
+
+.tcc_img {
+  grid-column: 1;
+}
+
+.tcc_text {
+  grid-column: 2;
+}
+
+.psi_img {
+  grid-column: 2;
+}
+
+.psi_text {
+  grid-row: 2;
+}
+
+.sis_img {
+  grid-column: 2;
+}
+
+.sis_text {
+  grid-row: 4;
+}
+
+.terapia_img {
+  grid-column: 1;
+}
