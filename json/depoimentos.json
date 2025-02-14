@@ -1,0 +1,24 @@
+{
+  "depoimentos": [
+    {
+      "titulo": "A terapia na Psivita mudou minha vida.",
+      "texto": "Desde o primeiro atendimento, me senti acolhido e compreendido. Hoje, tenho mais controle sobre minha ansiedade e sou muito mais feliz."
+    },
+    {
+      "titulo": "Profissionais incríveis!",
+      "texto": "Sempre tive receio de fazer terapia, mas aqui encontrei um espaço seguro para falar sobre tudo sem medo de julgamentos."
+    },
+    {
+      "titulo": "Atendimento humanizado e acolhedor.",
+      "texto": "A equipe da Psivita realmente se preocupa com o nosso bem-estar e nos ajuda a encontrar equilíbrio emocional."
+    },
+    {
+      "titulo": "Sinto uma grande diferença na minha autoconfiança.",
+      "texto": "Desde que comecei minhas sessões na Psivita, cada consulta está sendo um passo importante na minha jornada."
+    },
+    {
+      "titulo": "A Psivita foi um divisor de águas na minha vida.",
+      "texto": "Aprendi a lidar melhor com o estresse do dia a dia e a me priorizar mais. Recomendo a todos!"
+    }
+  ]
+}

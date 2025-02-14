@@ -63,10 +63,9 @@ body {
 .abordagens_container {
   height: 100%;
   padding-top: 8%;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   column-gap: 10%;
   row-gap: 2%;
 }
@@ -88,6 +87,7 @@ body {
 
 .abordagens_container > div > h1 {
   justify-self: left;
+  text-decoration: underline;
 }
 
 .tcc_img {
