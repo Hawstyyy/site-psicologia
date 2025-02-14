@@ -62,6 +62,7 @@ fetch('../json/depoimentos.json').then(res => res.json()).then(json =>{
     else {
       cardId--;
     }
+
     items[cardId].setAttribute('id', 'ativo');
 
     items[cardId].classList.add('transition');
@@ -70,4 +71,13 @@ fetch('../json/depoimentos.json').then(res => res.json()).then(json =>{
       items[cardId].classList.remove('transition');
     })
   })
+
+  prev.addEventListener('mouseenter'), () => {
+    prev.classList.add('button_hover');
+  }
+
+  prev.addEventListener('mouseleave'), () => {
+    prev.classList.remove('button_hover');
+    prev.classList.add('button_leave');
+  }
 });

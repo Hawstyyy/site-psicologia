@@ -35,3 +35,9 @@ nav {
 .links:hover::after {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
