@@ -108,3 +108,29 @@ body {
   border: 0;
   border-radius: 10px;
 }
+
+@media (max-width:425px) {
+  .agenda_ico {
+      width: 100px;
+    }
+  
+    .agenda_title {
+      font-size: 20px;
+    }
+  
+    .agenda_desc {
+      font-size: 18px;
+    }
+  .forms_agenda>label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .forms_agenda>input {
+    height: 20px;
+    font-size: 15px;
+  }
+  .forms_agenda>select {
+    height: 20px;
+    font-size: 15px;
+  }
+}
