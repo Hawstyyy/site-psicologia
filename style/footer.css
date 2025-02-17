@@ -14,3 +14,12 @@ footer > p {
   font-size: 20px;
   font-weight: bolder;
 }
+
+@media (max-width:768px) {
+  footer {
+    height: 100px;
+  }
+  footer > p {
+    font-size: 15px;
+  }
+}

@@ -54,12 +54,12 @@ body {
 
 .title {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
 }
 
 .desc {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .agendamento {
@@ -78,18 +78,20 @@ body {
 .about_container {
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: min-content 900px;
-  grid-template-rows: min-content min-content;
+  display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 5%;
-  padding-left: 10%;
 }
 
 .about {
   padding-top: 8%;
   padding-bottom: 6%;
   width: 100%;
+}
+
+.about_txt {
+  width: 80%;
 }
 
 .about_title {
@@ -103,6 +105,31 @@ body {
 }
 
 .about_img {
-  grid-row: 1;
+  max-width: 80%;
   border-radius: 20px;
+}
+
+@media (max-width:900px) {
+  .about_container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:768px) {
+  .agendamento {
+    width: 200px;
+    font-size: 18px;
+  }
+  .about_container {
+    flex-direction: column;
+  }
+  .about_title {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .about_desc {
+    font-size: 16px;
+    grid-column: 2;
+  }
 }

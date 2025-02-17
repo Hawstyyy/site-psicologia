@@ -60,11 +60,12 @@ body {
 }
 
 .depoimentos_container {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 8%;
+  overflow-x: hidden;
 }
 
 .card {
@@ -80,6 +81,7 @@ body {
   padding: 30px;
   row-gap: 5%;
   background-color: #cb99da;
+  z-index: -1;
 }
 
 .person_img {
@@ -97,24 +99,38 @@ body {
 }
 
 .depoimentos_container > button {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
   border: none;
   color: #fff;
   font-size: 80px;
   cursor: pointer;
   text-align: center;
+  z-index: 10;
+}
+
+.depoimentos_container>button > img {
+  width: 50px;
+  height: 50px;
 }
 
 .button_hover {
-  animation: grow 1s;
+  animation: grow 0.5s;
   animation-fill-mode: forwards;
 }
 
 .button_leave {
-  animation: shrink 1s;
+  animation: shrink 0.5s;
+}
+
+.button_hover_next {
+  animation: grow_next 0.5s;
   animation-fill-mode: forwards;
+}
+
+.button_leave_next {
+  animation: shrink_next 0.5s;
 }
 
 .transition {
@@ -153,6 +169,26 @@ body {
   }
 }
 
+@keyframes grow_next {
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shrink_next {
+  from {
+    transform: scale(1.2);
+  }
+  
+  to {
+    transform: scale(1);
+  }
+}
+
 @keyframes change_card_prev{
   from {
     opacity: 0;
@@ -170,13 +206,18 @@ body {
     left: 100%;
   }
   to {
+    position: absolute;
     opacity: 1;
     left: 0%;
   }
 }
 
 @media (max-width: 768px) {
-.depoimentos_title {
+  .main_container {
+    padding-bottom: 100px;
+  }
+
+  .depoimentos_title {
     font-size: 20px;
   }
 
@@ -186,3 +227,19 @@ body {
     text-align: center;
   }
 }
+
+@media (max-width:500px) {
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+  .card > h1 {
+    font-size: 20px;
+  }
+  .card > p {
+    font-size: 15px;
+  }
+  .depoimentos_container {
+    justify-content: space-between;
+  }
+} 

@@ -32,6 +32,10 @@ fetch('../json/depoimentos.json').then(res => res.json()).then(json =>{
   let cardId = 0;
   
   next.addEventListener('click', (e) => {
+    if(items[cardId].classList.contains('transition') || items[cardId].classList.contains('transition_2')) {
+      items[cardId].classList.remove('transition')
+      items[cardId].classList.remove('transition_2')
+    }
     ativo = document.getElementById('ativo');
     ativo.id = '';
     
@@ -53,6 +57,10 @@ fetch('../json/depoimentos.json').then(res => res.json()).then(json =>{
   })
 
   prev.addEventListener('click', (e) => {
+    if(items[cardId].classList.contains('transition') || items[cardId].classList.contains('transition_2')) {
+      items[cardId].classList.remove('transition')
+      items[cardId].classList.remove('transition_2')
+    }
     ativo = document.getElementById('ativo');
     ativo.id = '';
 
@@ -72,12 +80,31 @@ fetch('../json/depoimentos.json').then(res => res.json()).then(json =>{
     })
   })
 
-  prev.addEventListener('mouseenter'), () => {
-    prev.classList.add('button_hover');
-  }
-
-  prev.addEventListener('mouseleave'), () => {
-    prev.classList.remove('button_hover');
-    prev.classList.add('button_leave');
-  }
 });
+
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
+
+prev.addEventListener('mouseenter', () => {
+  prev.classList.add('button_hover');
+})
+
+prev.addEventListener('mouseleave', () => {
+  prev.classList.remove('button_hover');
+  prev.classList.add('button_leave');
+  prev.addEventListener('animationend', () => {
+    prev.classList.remove('button_leave');
+  })
+})
+
+next.addEventListener('mouseenter', () => {
+  next.classList.add('button_hover_next');
+})
+
+next.addEventListener('mouseleave', () => {
+  next.classList.remove('button_hover_next');
+  next.classList.add('button_leave_next');
+  next.addEventListener('animationend', () => {
+    next.classList.remove('button_leave_next');
+  })
+})

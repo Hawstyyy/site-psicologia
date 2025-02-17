@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaPsi</title>
+  <link rel="stylesheet" href="../style/agendamento.css">
+  <link rel="stylesheet" href="../style/nav.css">
+  <link rel="stylesheet" href="../style/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="./index.html" class="home"><img src="../image/home/ps.png" alt="logo" class="home"></a>
+    <a href="./abordagens.html" class="links">Abordagens</a>
+    <a href="./depoimentos.html" class="links">Depoimentos</a>
+    <a href="./agendamentos.html" class="links">Agendamento</a>
+    <img
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSI0OCIgZD0iTTg4IDE1MmgzMzZNODggMjU2aDMzNk04OCAzNjBoMzM2Ii8+PC9zdmc+"
+      class="menu" id="menu">
+    <div class="nav_mobile" id="nav_mobile">
+      <a href="./abordagens.html" class="links_menu">Abordagens</a>
+      <a href="./depoimentos.html" class="links_menu">Depoimentos</a>
+      <a href="./agendamentos.html" class="links_menu">Agendamento</a>
+    </div>
+  </nav>
+  <main class="main_container">
+    <section class="agenda_container">
+      <div class="agenda_txt">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMiA5YzAtMS44ODYgMC0yLjgyOC41ODYtMy40MTRTNC4xMTQgNSA2IDVoMTJjMS44ODYgMCAyLjgyOCAwIDMuNDE0LjU4NlMyMiA3LjExNCAyMiA5YzAgLjQ3MSAwIC43MDctLjE0Ni44NTRDMjEuNzA3IDEwIDIxLjQ3IDEwIDIxIDEwSDNjLS40NzEgMC0uNzA3IDAtLjg1NC0uMTQ2QzIgOS43MDcgMiA5LjQ3IDIgOW0wIDljMCAxLjg4NiAwIDIuODI4LjU4NiAzLjQxNFM0LjExNCAyMiA2IDIyaDEyYzEuODg2IDAgMi44MjggMCAzLjQxNC0uNTg2UzIyIDE5Ljg4NiAyMiAxOHYtNWMwLS40NzEgMC0uNzA3LS4xNDYtLjg1NEMyMS43MDcgMTIgMjEuNDcgMTIgMjEgMTJIM2MtLjQ3MSAwLS43MDcgMC0uODU0LjE0NkMyIDEyLjI5MyAyIDEyLjUzIDIgMTN6Ii8+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTcgM3YzbTEwLTN2MyIvPjwvZz48L3N2Zz4=" class="agenda_ico">
+        <h1 class="agenda_title">Agenda Psivita</h1>
+        <p class="agenda_desc">Agende sua Consulta com Nossos Especialistas</p>
+      </div>
+      <img src="../image/agendamento/agenda_04_4f0a5c3c1f.webp" class="bg">
+    </section>
+    <section class="forms_agenda_container">
+      <form action="#" method="post" class="forms_agenda">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+      
+        <label for="especialidade">Escolha a Especialidade:</label>
+        <select id="especialidade" name="especialidade" required>
+          <option value="" selected disabled>Selecione a especialidade</option>
+          <option value="psicologia_geral">Psicologia Geral</option>
+          <option value="terapia_cognitiva">Terapia Cognitivo-Comportamental</option>
+          <option value="terapia_sistemica">Terapia Sistêmica</option>
+          <option value="gestalt-terapia">Gestalt-Terapia</option>
+          <option value="psicanalise">Psicanálise</option>
+          <option value="aconselhamento">Aconselhamento para Ansiedade e Depressão</option>
+        </select>
+      
+        <label for="profissional">Escolha o Profissional:</label>
+        <select id="profissional" name="profissional" required>
+          <option value="maria_silva">Maria Silva</option>
+          <option value="joao_almeida">João Almeida</option>
+          <option value="carlos_souza">Carlos Souza</option>
+          <option value="luiza_martins">Luiza Martins</option>
+        </select>
+      
+        <label for="data">Escolha a Data:</label>
+        <input type="date" id="data" name="data" required>
+      
+        <label for="horario">Escolha o Horário:</label>
+        <select id="horario" name="horario" required>
+          <option value="08:30">08:30</option>
+          <option value="09:30">09:30</option>
+          <option value="10:30">10:30</option>
+          <option value="14:00">14:00</option>
+          <option value="15:00">15:00</option>
+          <option value="16:00">16:00</option>
+          <option value="17:30">17:30</option>
+        </select>
+      
+        <button type="submit" class="agendar_button">Agendar Consulta</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 VitaPsi 23.124.3210.0001/20</p>
+    <p>Cadastro Nacional de Estabelecimento de Saúde CNES 1.213.123</p>
+  </footer>
+</body>
+</html>
